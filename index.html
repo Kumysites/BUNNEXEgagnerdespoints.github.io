@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BUNNEXE veut vous faire gagner des points pour votre examen de bac en répondant à une question simple</title>
+    <title>BUNNEXE gsgner des points pour l'examen</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -49,15 +49,16 @@
 
 <body>
     <div class="container">
+        <h1>BIENVENUE</h1>
+    <!-- Intégration de l'image -->
+    <img src="C:\Users\KERMA\Desktop\mensp.png" alt="Logo de bunnexe">
+
         <h2>Bunnexe veux vous aider a reussir votre examen de bac</h2>
         <p>Saisissez le nombre de points que vous voudriez obtenir aux examens :</p>
         <input type="number" id="point" placeholder="Entrez le nombre de points">
         <button onclick="afficherMessage()">Valider</button>
         <div id="message"></div>
     </div>
-    <footer>
-        <p>KWH support © 2023 All rights reserved</p>
-    </footer>
 
     <script>
         function afficherMessage() {
@@ -66,17 +67,19 @@
             var message = "";
 
             if (point >= 950) {
-                for (var i = 1; i <= 20; i++) {
+                for (var i = 1; i <= 10; i++) {
                     message += "Va étudier, bâtard! Ces points ne vont pas se faire tout seuls.<br>";
                 }
             } else {
-                message = "Pourquoi êtes-vous allé à l'école, fils de pute?";
+                for (var i = 1; i <= 10; i++) {
+                    message += "Pourquoi êtes-vous allé à l’école ?.<br>";
+                }
+                
             }
 
             messageDiv.innerHTML = message;
         }
     </script>
-
 </body>
 
 </html>
