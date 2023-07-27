@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BUNNEXE gsgner des points pour l'examen</title>
+    <title>BUNNEXE gagner des points pour l'examen</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -51,12 +51,12 @@
     <div class="container">
         <h1>BIENVENUE</h1>
     <!-- Intégration de l'image -->
-    <img src="https://github.com/Kumysites/BUNNEXEgagnerdespoints.github.io/blob/main/mensp.png" alt="Logo de bunnexe">
+    <img src="C:\Users\KERMA\Desktop\mensp.png" alt="Logo de bunnexe">
 
         <h2>Bunnexe veut vous aider a reussir votre examen de bac</h2>
         <p>Saisissez le nombre de points que vous voudriez obtenir aux examens :</p>
         <input type="number" id="point" placeholder="Entrez le nombre de points">
-        <button onclick="afficherMessage()">Valider</button>
+        <button onclick="afficherMessage()">Generer les points</button>
         <div id="message"></div>
     </div>
 
@@ -74,7 +74,11 @@
                 for (var i = 1; i <= 10; i++) {
                     message += "Pourquoi êtes-vous allé à l’école ?.<br>";
                 }
-                
+            if (point <= 300) {
+                message += "Là vous êtes mal barré  "
+            } else {
+                message += "Vous etes con"
+            } 
             }
 
             messageDiv.innerHTML = message;
